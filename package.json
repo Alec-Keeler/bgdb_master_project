@@ -1,0 +1,28 @@
+{
+  "name": "bgdb_master",
+  "version": "1.0.0",
+  "description": "This is the master project from which each iteration of bgdb will be created",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev": "dotenv nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alec-Keeler/mcudb_master_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alec-Keeler/mcudb_master_project/issues"
+  },
+  "homepage": "https://github.com/Alec-Keeler/mcudb_master_project#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "dotenv-cli": "^5.1.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}

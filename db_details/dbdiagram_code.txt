@@ -1,0 +1,36 @@
+Table boardgames {
+  id integer
+  name varcharacter
+  max_players integer
+  category varcharacter
+  avg_rating numeric
+}
+
+Table users {
+  id integer
+  username varcharacter
+  email varcharacter
+  password varcharacter
+  fave_category varcharacter
+}
+
+Table reviews {
+  id integer
+  content text
+  game_id integer
+  user_id integer
+}
+
+Table wishlist {
+  id integer
+  game_id integer
+  user_id integer
+}
+
+Ref: "users"."id" < "wishlist"."user_id"
+
+Ref: "users"."id" < "reviews"."user_id"
+
+Ref: "boardgames"."id" < "wishlist"."game_id"
+
+Ref: "boardgames"."id" < "reviews"."game_id"
